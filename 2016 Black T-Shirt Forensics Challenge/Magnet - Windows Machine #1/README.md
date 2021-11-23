@@ -1,0 +1,22 @@
+# 2016 Black T-Shirt Forensics Challenge - Windows Machine Magnet Case Files
+
+| Filename  | MD5 Hash | SHA256 Hash |
+| ------------- | ------------- | ------------- |
+| 4569bb1ccbe04d039232c1bcc796747c.attachments  | 9e5cc260bef3883a89a973a9cac5e4c5  | e01f422c13855ad80eb189a885082871bf2c3904c0f107bc0f8d9e6fee04a0aa  | 
+| 4569bb1ccbe04d039232c1bcc796747c.attachments-shm  | 368765e03c0beb97f584c526dc3aca3f  | cc297c91b1ae2b59b0585d779ccf02252fd29d2c3859d35634b0eec6ec0a10b1  | 
+| 4569bb1ccbe04d039232c1bcc796747c.attachments-wal  | b284c30584438a0bfc333fc0b27dd31a  | 16661c1f9e07b02c103422e6aa89f14c8deb0cb57af95bc7c0372a5f6d00be8b  | 
+| artifacts.log  | 25dd9e545e9b3a5494a9e0348f494495  | 92d1c549ddc23c3c679958209c4a925f50a0cfe7c30b996e5352659aa231842a  | 
+| AXIOMExamine.log  | ddc68b73258b5ae7d5c5cabdba1673ab  | ab4b6b043c243df91d25ade7490e3a18f8cfd26c53be25cb410b00310abbd61d  | 
+| AXIOMExamine.log.1  | 753ebe639a4320f112444a4a9bdb8f52  | 0d0eb29424bc013c3e3058943665202e5aa58caf6629c74ebb28637f5e626661  | 
+| Case Information.txt  | 71cce7499e27e7379b8b7526a753e40e  | 6327b91f67f0a904e5205a0bcc6776e7d5e91e4dc6502235c9e504dedeebad95  | 
+| Case Information.xml  | 6db82ef7ea36504966b417c93a120c76  | 02211d57f45d743296446294b7f62ea49e02f69280e01c53d1357aa5ca2aae43  | 
+| Case.mfdb  | 0863c06d14bb9d32b6a19f638067ddf0  | 038a9b4f12b490a1ea938b2385551e5a4c1f7fb175fe37e72929a9af16f0889a  | 
+| Case.mfdb-shm  | f8d203dfc35a94054675653ffd9a2a43  | 0ebca34b4089170c7411493c88993abdecc2af9a8c7c1949937ba8f6bf9c8039  | 
+| Case.mfdb-wal  | 7dbdda693cb152ac1a427e0360d0b1bd  | d7e962b396a9f3e2ae3535a47ab82af8943398e6d872bfe7d55871ad37c79325  | 
+| Case.timeline  | bc48fd8e0ccd99c4edd9019ae760bac0  | c06d45c2b7c188c107e9674537f8ba6eb25f33a4564d879ca2d09d3e2fb61f1a  | 
+| Case.timeline-shm  | 18e5a50ec51386437a08083e1bbfb70c  | 7f678cbff71c81fe2bb6ffefb80606e5ee92c427826a56c273273f11a41126fe  | 
+| Case.timeline-wal  | b6df5be036fc2f114f790e315ad7aabc  | 045bb0a98deec45b81126ed2d22c3cc77750a549784b8a6bdbf66c8f4980e757  | 
+| custom_artifacts.log  | c6a30affc21d005cbacf1ea43aee4218  | 9240d2c68da6e56fbd2689755ad40a87e819735edbe62901d1693a30bbc9ebfa  | 
+| ipc.log  | e9a653e386af39abfe230402a9b4d412  | de7d0f6ae9cafa55248e2a7343b9b4fca5018e3bee9420e1efe15b5399da82e2  | 
+| log.txt  | 9758c14e48a6de984edfcd5d10d0985e  | 00157be28c6e0de0d52ae6e19ac0038849f96ed25fe15463f57ee1807c65068f  | 
+| logging-Nov 20 2021 143742.zip  | edc97ef597fde9fb632202880b8098fe  | 372955ab337d4b4df46a4b0c0c14cc45426b4202b186741b9609fdf1647ab950  | 
