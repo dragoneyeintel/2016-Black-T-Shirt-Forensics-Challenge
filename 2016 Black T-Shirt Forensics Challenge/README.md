@@ -1,4 +1,4 @@
-# A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities
+# 2016 Black T-Shirt Forensics Challenge
 
 | First Header  | Second Header |
 | ------------- | ------------- |
