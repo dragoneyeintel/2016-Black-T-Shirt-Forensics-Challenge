@@ -40,6 +40,44 @@ This ingest was examined with every artifact variant selected which may take som
 
 <br /><br /><br />
 
+### Identifying Machines
+What can we surmise about the recovered machines themselves from a set of artifacts? Often hardware information, operating system (OS) information, and universally unique identifiers (UUIDs) will reveal information about a machines properties.
+<details><summary><b>Volume Information</b></summary>
+    
+    -----------------------------------------------------------------------
+    |             Volume Name             |          Volume Type          |
+    |           System Reserved           |           Partition           |
+    |      Seagate Backup Plus Drive      |     Inserted Disk Volume      |
+    | Seagate BUP Slim BK SCSI Disk Device|           USB Device          |
+    |                EXTRAS               |     Inserted Disk Volume      |           ----------------
+    |    Generic Flash Disk USB Device    |          USB Device           |     <     |  Machine 1   |
+    |       Hitachi HTS541660J9SA00       |          USB Device           |           ----------------
+    |      TSSTcorp DVD+-RW SU-208FB      |          USB Device           |
+    |          Integrated Webcam          |          USB Device           |
+    |      CBM Flash Disk USB Device      |          USB Device           |
+    |                OSDisk               |     Inserted Disk Volume      |
+    -----------------------------------------------------------------------
+    
+</details>
+<details><summary><b>Images</b></summary>
+    We can sort the images by last modified/accessed time to retrieve the most likely to be useful images first. Images indicative of operating system information (Default Images) are one method to identify an OS on a given device. Third-party application icons can be used to piece together which applications a user has installed at a given time.
+    
+<img src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/76be7711d18ed936754a2e4f216fa74e5d2f978e/imgs/2016-Black-T-Shirt-Forensics-Challenge-%231.png" align="right"
+     alt="certutil-MD5" width="320" height="220">
+    
+    ------------------------------------------------------------------------------
+    |           Image Name(s)            |                Summary                |
+    |          ubuntu_logo.png           |               Ubuntu Logo             |
+    |     BTCTFC.gif & black-t.png       |            Challenge Images           |
+    |       Application Icon Set         |         Ubuntu and Gnome Icons        |
+    |  3rd Party Application Icon Sets   |   Such as Codeblocks and Thunderbird  |
+    ------------------------------------------------------------------------------
+    
+</details>
+
+
+<br />
+
 ### Passwords and Tokens
 In the "Passwords and Tokens" results category, four Windows username password hashes have been discovered. Although this tool will not crack the hashes for us, they are common weak NTLM hashes which may be easily cracked manually.
 <details open><summary><b>Passwords</b></summary>
