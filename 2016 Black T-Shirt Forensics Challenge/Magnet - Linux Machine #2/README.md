@@ -1,0 +1,25 @@
+# 2016 Black T-Shirt Forensics Challenge - Linux Machine Magnet Case Files
+
+| Filename  | MD5 Hash | SHA256 Hash |
+| ------------- | ------------- | ------------- |
+| /index/ArtifactHits/_0.cfe  | 7ef4ae07a25a80f92c20e76cdef6bc18  | b0d5a46793cd5e4f59c89c4bcd646592ed36873de7b1eb2db7eb14c9578da7ba  | 
+| /index/ArtifactHits/_0.cfs  | dd84a97c1abddcdbebb67b0470e2d6f0  | d9aff2ec81f819304502b0e07481efe84063b74e7f047a224b5957395e0becb0  | 
+| /index/ArtifactHits/_0.si  | 2fec9979704cef77ee4a8ba52d3a4177  | 3ad57b218b57be22e8da43a71b9f53961819cccf15c5ee80838ffe648b9b65f7  | 
+| /index/ArtifactHits/_1.cfe  | 64b6173dd80fc386b3eae69d77375b3c  | 42000e8d4658718fddf6f6f0c3ce5a5319d9f5274054b4eb1ac48578ca720ec6  | 
+| /index/ArtifactHits/_1.si  | aecf932e59557061465448516838bfea  | 742f73385462434f892dd457283317db61ee3f54c924879a750c2ca5a1e3b7f6  | 
+| /index/ArtifactHits/segments.gen  | 9fce465722c63062366af4758506e901  | 3590ca7b85581e41d9c5932d92c9cd907e9247633c780e41d38a504f27803043  | 
+| /index/ArtifactHits/segments_1  | df68c08996455c1df4ac66ae0c413fbc  | cbbb3381cc49d1d2a1251a0bfa8a662ee26da4784b045cc717fd27d86137f4a3  | 
+| 214f6c9f48da4de1bd6b6db6e50b4313.attachments  | ae92b2a1bdaf4a930238d7815710511f  | 88bd8c6078758e3fbc21ff1579762e173c28a2c43b5ca621fa8df73f6307cd32  | 
+| artifacts.log  | 5f4999d21ecd65d0d6ccf5b3c6239935  | 927d10e71942d9893467b724a2dca127671f06f4a80ce3415ade9f570d525cb8  | 
+| AXIOMExamine.log  | b6a0425647a091ff5879738a9df7600b  | 2b8ef4d8ed173b212a04c8efe1c50226d3ebbea4d6504e15ae12a628815e0034  |
+| Case Information.txt  | 89daa1487301c142fdab605881a70139  | 8f38ca465b2288df15e7133c9d5f183421d13cce92b48c20697a52fb7f6e5f57  |
+| Case.mfdb  | ceca1927b3e6b6795b8655c85ea0312d  | bf42746b9501275ac5b21d4b6ba1de036093bd7d8124d8621695557d5c2d6356  |
+| Case.mfdb-shm  | 1d1141a04c7116015d6e783fa9c52071  | 80ddea950d484aada6103a30a28f9ca5102804c866a59c09af3a36ac116dc34a  |
+| Case.mfdb-wal  | 345a5ef9681b6250f9bb8ba4ae1e70e1  | eb1c1b6ec16d831a90516ddd50bdb116219c61631ed61365c89e23de6864dc35  |
+| Case.timeline  | 6dce3ada56eab791c5007269f73353db  | ac338afb4c5d064089413e9ebe34c765569f6626f4c899831cd41f7cfe6c64fc  |
+| Case.timeline-shm  | b8f4fadfe38717cba6ff8873b2615e10  | 12fca8283fd262e99c1efdccb5aa3853ed24dccce2b2dbd1e8f37a33e7dcbff6  |
+| Case.timeline-wal  | 0e7de3c0092efe86b12126ec2020afcd  | 50f4ff11a3cda9232e8d223e587311e0c69b740eca3c8d881e380fc756bfda64  |
+| custom_artifacts.log  | 94e03ce4ac85531855833bf566251b9b  | 80386b5ef9691b365a45464763b9c3d9e4dd3d9989d8a6ead4f772441f26ecf2  |
+| ipc.log  | 3ff627a50ce0a20f9dd8e156c5ed87e7  | f4ea0d34b616083d4f73232f93212017d43b2d923887ed7fe7ced216e92fe391  |
+| log.txt  | ccdaaf18306d3b66e4b8429d4b5e2d7e  | d2863c03cbe973c5fa991d4788752716fbec79631154a8f49dd916c70b1511b0  |
+| log.txt.1  | 473b88a7b3c71d6651168fbe116c1382  | ae6e6f3f230a8da43ede87e16410cd4ef5b036d64c0e03399b63bf443d6835f5  |
