@@ -42,39 +42,103 @@ This ingest was examined with every artifact variant selected which may take som
 
 ### Identifying Machines
 What can we surmise about the recovered machines themselves from a set of artifacts? Often hardware information, operating system (OS) information, and universally unique identifiers (UUIDs) will reveal information about a machines properties.
-<details><summary><b>Volume Information</b></summary>
+<details open><summary><b>IP & Device IDs</b></summary>
     
-    -----------------------------------------------------------------------
-    |             Volume Name             |          Volume Type          |
-    |           System Reserved           |           Partition           |
-    |      Seagate Backup Plus Drive      |     Inserted Disk Volume      |
-    | Seagate BUP Slim BK SCSI Disk Device|           USB Device          |
-    |                EXTRAS               |     Inserted Disk Volume      |           ----------------
-    |    Generic Flash Disk USB Device    |          USB Device           |     <     |  Machine 1   |
-    |       Hitachi HTS541660J9SA00       |          USB Device           |           ----------------
-    |      TSSTcorp DVD+-RW SU-208FB      |          USB Device           |
-    |          Integrated Webcam          |          USB Device           |
-    |      CBM Flash Disk USB Device      |          USB Device           |
-    |                OSDisk               |     Inserted Disk Volume      |
-    -----------------------------------------------------------------------
-    
-</details>
-<details><summary><b>Images</b></summary>
-    We can sort the images by last modified/accessed time to retrieve the most likely to be useful images first. Images indicative of operating system information (Default Images) are one method to identify an OS on a given device. Third-party application icons can be used to piece together which applications a user has installed at a given time.
-    
-<img src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/76be7711d18ed936754a2e4f216fa74e5d2f978e/imgs/2016-Black-T-Shirt-Forensics-Challenge-%231.png" align="right"
-     alt="certutil-MD5" width="320" height="220">
-    
-    ------------------------------------------------------------------------------
-    |           Image Name(s)            |                Summary                |
-    |          ubuntu_logo.png           |               Ubuntu Logo             |
-    |     BTCTFC.gif & black-t.png       |            Challenge Images           |
-    |       Application Icon Set         |         Ubuntu and Gnome Icons        |
-    |  3rd Party Application Icon Sets   |   Such as Codeblocks and Thunderbird  |
-    ------------------------------------------------------------------------------
+                            ---------------------------------------------------------------------------
+                            | 192.168.0.6 - 192.168.30.1 - 192.168.31.1 |     Registry IPv4 Addr.     |
+                            |             DESKTOP-A8BOTBH               |    Comp. Name / Display     |
+                            |             WIN-RRKRCRMTOAQ               | Comp. Idnetifier (win logs) |
+                            |             DESKTOP-M7P1NB6               | Comp. Idnetifier (win logs) |
+                            |              192.168.0.10                 |     Incoming RDP Access     |
+                            ---------------------------------------------------------------------------
     
 </details>
 
+<details open><summary><b>Volume Information</b></summary>
+    
+                 -----------------------------------------------------------------------
+                 |             Volume Name             |          Volume Type          |
+                 |           System Reserved           |           Partition           |
+                 |      Seagate Backup Plus Drive      |     Inserted Disk Volume      |
+                 | Seagate BUP Slim BK SCSI Disk Device|           USB Device          |
+                 |                EXTRAS               |     Inserted Disk Volume      |           ----------------
+                 |    Generic Flash Disk USB Device    |          USB Device           |     <     |  Machine 1   |
+                 |       Hitachi HTS541660J9SA00       |          USB Device           |           ----------------
+                 |      TSSTcorp DVD+-RW SU-208FB      |          USB Device           |
+                 |          Integrated Webcam          |          USB Device           |
+                 |      CBM Flash Disk USB Device      |          USB Device           |
+                 |                OSDisk               |     Inserted Disk Volume      |
+                 -----------------------------------------------------------------------
+                                                                                                
+                               ------------------------------------------------------------------------
+                               |  Machine 1 -> Microsoft NTFS Paritioned Drives  |     Windows 10     |
+                               |    Machine 2 -> EXT-Family Partitioned Drive    |   Ubuntu - Linux   |
+                               ------------------------------------------------------------------------
+    
+</details>
+<details open><summary><b>Images</b></summary>
+    We can sort the images by last modified/accessed time to retrieve the most likely to be useful images first. Images indicative of operating system information (Default Images) are one method to identify an OS on a given device. Third-party application icons can be used to piece together which applications a user has installed at a given time.
+
+    
+                                                           Machine #1
+                           ------------------------------------------------------------------------------
+                           |           Image Name(s)            |                Summary                |
+                           |        Many Starwars Images        | Cached Images of Starward Memorobelia |
+                           |      Amazon and Yahoo Images       | Cached Images of Amazon/Yahoo Website |
+                           |            Capture.PNG             |        Screenshot of OpenOffice       |
+                           ------------------------------------------------------------------------------
+    
+<img src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/893bde78fcd62325c217bb3aa35f660f2dde7c93/imgs/BTCFC.gif" align="right"
+     alt="BTCTFC" width="200" height="200">
+    
+                                            Machine #2
+            ------------------------------------------------------------------------------
+            |           Image Name(s)            |                Summary                |
+            |          ubuntu_logo.png           |               Ubuntu Logo             |
+            |     BTCTFC.gif & black-t.png       |            Challenge Images           |
+            |       Application Icon Set         |         Ubuntu and Gnome Icons        |
+            |  3rd Party Application Icon Sets   |   Such as Codeblocks and Thunderbird  |
+            ------------------------------------------------------------------------------
+    
+There is really not much else when it comes to audio or even video for that matter. AXIOM does a great job at carving these files out of cache but these machines in particular do not offer much information in the way of media other than carved out advertisements such as the "Betty Crocker Cookbook".
+</details>
+
+</details>
+<details open><summary><b>Rebuilt Desktops and Webpages</b></summary>
+Magnet AXIOM will go through the work of rebuilding user desktops with the background wallpaper along with desktop files. These images provide a good representation of which applications a user is making the most use of.
+    
+<img src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/2ffe3822b5e2c4845ccc402b1ca3c4e9395adc2a/imgs/2016-Black-T-Shirt-Forensics-Challenge-%232.jpg" align="left"
+     alt="#2" width="500" height="250">
+ 
+<br /><br />
+    
+              -----------------------------------------
+    <-        |       Mchine #1 - User "tester"       |
+              -----------------------------------------
+   
+<br /><br /><br />
+    
+<img src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/e3a3582c66c6a0b1efda1909d977fa3406cdd4d8/imgs/2016-Black-T-Shirt-Forensics-Challenge-%233.png" align="right"
+     alt="#3" width="500" height="250">
+ 
+    
+<br /><br /><br />
+    
+    -----------------------------------------
+    |       Mchine #1 - User "Carson"       |        ->
+    -----------------------------------------
+   
+<br /><br /><br /><br />
+
+<img src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/4cc617ea58200fecadaed588cccc4607bf96f15f/imgs/2016-Black-T-Shirt-Forensics-Challenge-%234.png" align="left"
+     alt="#4" width="400" height="100">
+The same is done for webpage cache. It is worth looking through rebuilt webpages as they often reveal unique login information and graphical proof of user actions. In this case we are able to recover a gmail webpage snippit which displays a user email.
+
+    
+<br />
+</details>
+
+Now that we have a general understanding of frequently used applications and operating system varience, we can start looking for artifacts pertaining to the "Case".
 
 <br />
 
@@ -90,10 +154,105 @@ In the "Passwords and Tokens" results category, four Windows username password h
     |   Jonathan    | BECEDB42EC3C5C7F965255338BE4453C  |    "letmein"   |       ----------------------------------
     ----------------------------------------------------------------------
     
+The "Administrator" hash is actually just a placeholder hash signifying that a password has not been set yet and the account must be setup. No password will work for this account until it is set by another user with proper permissions.
 </details>
 
-### Summary
-Table Here
+<br />
+    
+### Internet, Email, & Browser Artifacts
+AXIOM has recovered 30,000 Web Related artifacts pertaining to everything from search history to Flash Cookies and File Download information.
+<details open><summary><b>Autofill, Headers, and Cookies</b></summary>
+<img src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/ca21e3ccbb348b3dceda5fbb933f530116994821/imgs/2016-Black-T-Shirt-Forensics-Challenge-%235.png" align="left"
+     alt="#4" width="400" height="170">
+We will ignore general cookies for the time being, as we will not be able to use them to bypass login due to this challenge being five years old at this point. We can however take a look at Google Chrome, Edge, Firefox, Internet Explorer, and WebKit history along with header information. Google Chrome Autofil and Current Session artifacts provide us assurance of the previously found email.
+    
+<br /><br />
+    
+</details>
 
+<details open><summary><b>Downloads</b></summary>
+
+                                                           Machine #1
+                           ------------------------------------------------------------------------------
+                           |            File Name(s)            |                Source                 |
+                           |            vmware_free             |             Edge/IE Cache             |
+                           |              firefox               |             Edge/IE Cache             |
+                           |          ChromeSetup.exe           |             Firefox Cache             |
+                           ------------------------------------------------------------------------------
+                               Yes the madlad downloaded Firefox from IE and then Chrome from Firefox
+ 
+</details>
+    
+<details open><summary><b>Interesting Search History</b></summary>
+Web related history can point to local device files and may be used to alert us to recently accessed user-created files.
+    
+                                                           Machine #1
+                        ------------------------------------------------------------------------------------
+                        |            Link / Webpage             |                Source                    |
+                        |                                       |                                          |
+                        |                                       |                                          |
+                        |                                       |                                          |
+                        ------------------------------------------------------------------------------------
+ 
+</details>
+
+<br />
+    
+### Documents and Logging
+    
+<details open><summary><b>Readable Documents</b></summary>
+    
+                                                           Machine #1
+                        ------------------------------------------------------------------------------------
+                        |            Document Name            |                Summary                    |   File Type
+                        |                                       |                                          |
+                        |                                       |                                          |
+                        |                                       |                                          |
+                        ------------------------------------------------------------------------------------
+ 
+</details>
+    
+<details open><summary><b>Logging & Security</b></summary>
+    
+                                                           Machine #1
+                        ------------------------------------------------------------------------------------
+                        |            Document Name            |                Summary                    |   File Type
+                        |                                       |                                          |
+                        |                                       |                                          |
+                        |                                       |                                          |
+                        ------------------------------------------------------------------------------------
+ 
+</details>
+    
+<details open><summary><b>Other</b></summary>
+    
+                                                              Machine #1
+                        ---------------------------------------------------------------------------------------
+                        |               Artifact Name              |          Summary / Artifact Type         |
+                        |               VeraCrypt.exe              |   Antiforensic tool (Seen on Desktop)    |
+                        |                  locked                  |              Encrypted File              |
+                        |           network-architecture           |              Encrypted File              |
+                        |          ev_hashes_whitelist.bin         |              Encrypted File              |
+                        | 62A8F87D1165BC1EE9A41CEB9CE5E9D57F37E4CE |              Encrypted File              |
+                        |           videoplayback[1].mp4           | Encrypted File (Probably Just Corrupted) |
+                        |          Virtual Disk-s001.vmdk          |               Virtual Disk               |
+                        |          Virtual Disk-s002.vmdk          |               Virtual Disk               |
+                        |          Virtual Disk-s003.vmdk          |               Virtual Disk               |
+                        |            Virtual Disk.vmdk             |               Virtual Disk               |
+                        ---------------------------------------------------------------------------------------
+ 
+</details>
+    
+<br />
+    
 ## Autopsy
-NULL
+N/A For Time Being
+
+<br />
+    
+## Manual
+Although a good set of artifacts are collated by forensic toolkits, there is just an impossibly large range of what can serve as an artifact. Not all of what we may be looking for is taken into account by the tools and we should always look through the directory structure manually for suspicious and interesting files. Thankfully all of these toolkits provide a dedicated file browser/extractor for us to manually look through.
+    
+    
+## Conclusion
+Where digital forensic analysis tools really shine is when carving and fragmented data comes into play. Automated rebuilding of these fragmented memory segments provides us with files and artifacts otherwise unrecoverable by hand. The reason we recieve so many seemingly "useless" artifacts is because well it is hard for a tool to actually know what we as investigators need, so they provide us with all of the information and we can sift through it and find the meaningful artifacts ourselves - and this is the best possible solution. 
