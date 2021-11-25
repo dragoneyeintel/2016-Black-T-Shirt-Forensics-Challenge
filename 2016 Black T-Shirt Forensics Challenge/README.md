@@ -183,16 +183,36 @@ We will ignore general cookies for the time being, as we will not be able to use
  
 </details>
     
-<details open><summary><b>Interesting Search History</b></summary>
+<details open><summary><b>Search History / Params</b></summary>
 Web related history can point to local device files and may be used to alert us to recently accessed user-created files.
     
-                                                           Machine #1
-                        ------------------------------------------------------------------------------------
-                        |            Link / Webpage             |                Source                    |
-                        |                                       |                                          |
-                        |                                       |                                          |
-                        |                                       |                                          |
-                        ------------------------------------------------------------------------------------
+                                                               Machine #1
+                      -------------------------------------------------------------------------------------------
+                      |               Link / Webpage                |                  Source                   |
+                      |      C:\Users\Carson\Documents\locked       |         IE Cache (Weekly History)         |
+                      |    C:\Users\tester\Documents\HiTek.odp      |         IE Cache (Weekly History)         |
+                      |            G:\IP Addresses.txt              |         IE Cache (Weekly History)         |
+                      |    Users\tester\Documents\DNS Records.ods   |         IE Cache (Weekly History)         |
+                      |    tester\Documents\network-architecture    |         IE Cache (Weekly History)         |
+                      |                E:\grays_4.png               |         IE Cache (Weekly History)         |
+                      |       E:\Ubuntu 64-bit 15.10.vmwarevm       |         IE Cache (Weekly History)         |
+                      |              H:\passwords.txt               |         IE Cache (Weekly History)         |
+                      |    C:\Users\Carson\Pictures\Capture.PNG     |         IE Cache (Weekly History)         |
+                      |      C:\Users\Carson\Documents\locked       |         IE Cache (Weekly History)         |
+                      |     system32\oobe\FirstLogonAnim.html       |         IE Cache (Weekly History)         |
+                      |     Dropbox, Box, Ubuntu One, Sky Drive     |          Cloud Services Accessed          |
+                      |Flickr, Twitter, Facebook, LinkedIn, Reddit  |      Social Media Services Accessed       |
+                      |               Many HTTP Links               |               Chrome Cache                |
+                      |   Flapper, WidevineCdm, EV Certs Whitelist  |            Chrome Extentions              |
+                      |         mrobinson4614@stevenson.edu         |   FF -  VmWare Parameter (EMail)          |
+                      |                 410-940-9782                |   FF -  VmWare Parameter (Phone)          |
+                      |             T4WH-M6E3-WRBW-8T9Q             |   FF - VmWare Parameter (Prod Key)        |
+                      |                 witchcraft                  |   FF - VmWare Parameter (Username)        |
+                      |               Michael Robinaon              |   FF -   VmWare Parameter (Name)          |
+                      |            Stevenson University             |   FF - VmWare Parameter (Company Name)    |
+                      |     Metasploit Professional Client Links    |   FF -       Virtual Machines             |
+                      |    exploit/.../adobe_flash_nellymoser_bof   |   FF -       Virtual Machines             |
+                      -------------------------------------------------------------------------------------------
  
 </details>
 
@@ -203,24 +223,45 @@ Web related history can point to local device files and may be used to alert us 
 <details open><summary><b>Readable Documents</b></summary>
     
                                                            Machine #1
-                        ------------------------------------------------------------------------------------
-                        |            Document Name            |                Summary                    |   File Type
-                        |                                       |                                          |
-                        |                                       |                                          |
-                        |                                       |                                          |
-                        ------------------------------------------------------------------------------------
+                        ---------------------------------------------------------------------------------------
+                        |             Document Name             |                   Summary                   |  
+                pdf ->  |            Metasploit Docs            | Many Docs Indicating User Has Installed MSF |
+                pdf ->  |            Veracrypt Docs             |       Docs Indicating use of Veracrypt      |
+                doc ->  |               notes.doc               |                Word Document                |
+                doc ->  |          Next-character.docx          |                Word Document                |
+         writer doc ->  |             Projects.odt              |               Writer Document               |
+         writer doc ->  |            Evaluations.odt            |               Writer Document               |
+         writer doc ->  |              Notes.odt                |               Writer Document               |
+         writer doc ->  |           Laser-Widget.odt            |               Writer Document               |
+         writer doc ->  |              notes.odt                |               Writer Document               |
+         writer doc ->  |              Report.odt               |               Writer Document               |
+         writer doc ->  |              Warning.odt              |               Writer Document               |
+         writer doc ->  |           B List 2015.odt             |               Writer Document               |
+         writer doc ->  |        Happy Birthday Ben.odt         |               Writer Document               |
+                        ---------------------------------------------------------------------------------------
  
 </details>
     
 <details open><summary><b>Logging & Security</b></summary>
     
-                                                           Machine #1
-                        ------------------------------------------------------------------------------------
-                        |            Document Name            |                Summary                    |   File Type
-                        |                                       |                                          |
-                        |                                       |                                          |
-                        |                                       |                                          |
-                        ------------------------------------------------------------------------------------
+                                               Machine #1
+         ------------------------------------------------------------------------------------
+         |             Artifact Name             |                Summary                   |  
+         |    VMware Player, Chrome, Firefox     |          Installed Applications          |  
+         | VeraCrypt, WinSCP 5.7.6, Adobe Reader |          Installed Applications          |  
+         |     Open Office, Realtek Drivers      |          Installed Applications          |
+         |          192.168.0.10 - RDP           |  RDP Connection Established, Logged On   |
+         | tester, Administrator, Carlson, Guest |        Recovered Account Usernames       |
+         |        DefaultAccount, Jonathan       |        Recovered Account Usernames       |
+         |   Firefox Setup Stub 42.0.exe->(UPX)  |      Windows Defender Malicious File     | <- sigseq=0x0000055551CE2A24
+         |         VMware Player\zip.exe         |      Windows Defender Malicious File     | <- sigseq=0x00000555B74979F0
+         |       WinSCP\PuTTY\is-BP5UF.tmp       |      Windows Defender Malicious File     | <- sigseq=0x00000555C1725C4C
+         |       WinSCP\PuTTY\puttygen.exe       |      Windows Defender Malicious File     | <- sigseq=0x00000555C1725C4C
+         |  IKE and AuthIP IPsec Keying Modules  |         Modified Auth Services           |
+         |             Carlson User              |              Remote Logon                |
+         |            ANONYMOUS User             |             Network Logon                | <- Anon had access to login to 
+         |       Many NT AUTHORITY Logons        |             Service Logon                |          NT AUTHORITY
+         ------------------------------------------------------------------------------------
  
 </details>
     
@@ -238,7 +279,15 @@ Web related history can point to local device files and may be used to alert us 
                         |          Virtual Disk-s001.vmdk          |               Virtual Disk               |
                         |          Virtual Disk-s002.vmdk          |               Virtual Disk               |
                         |          Virtual Disk-s003.vmdk          |               Virtual Disk               |
-                        |            Virtual Disk.vmdk             |               Virtual Disk               |
+                        |             Virtual Disk.vdmk            |               Virtual Disk               |
+                        ---------------------------------------------------------------------------------------
+    
+                                                              Machine #2
+                        ---------------------------------------------------------------------------------------
+                        |               Artifact Name              |         Summary / Artifact Type          |
+                        |                 initrd.img               |              Encrypted File              |
+                        |                  X3fw.ncf                |              Encrypted File              |
+                        |               memtest86+.iso             |                 ISO File                 |
                         ---------------------------------------------------------------------------------------
  
 </details>
@@ -253,6 +302,11 @@ N/A For Time Being
 ## Manual
 Although a good set of artifacts are collated by forensic toolkits, there is just an impossibly large range of what can serve as an artifact. Not all of what we may be looking for is taken into account by the tools and we should always look through the directory structure manually for suspicious and interesting files. Thankfully all of these toolkits provide a dedicated file browser/extractor for us to manually look through.
     
+<details open><summary><b>PCAP Analysis</b></summary>
+  
+For PCAP analysis (we were given a packet capture alongside the disks) we will use Wireshark and Network Miner. Network miner in particular does a great job at automatically carving all downloaded files (over tcp) and providing them to us for analysis. Wireshark provides a more technical and manual interface but can allow for some complex tasks. The provided file - a pcapng file - is not naturally compatible with network miner, so we will convert the file manually before using the tool. To do so we can run the following command on a linux machine: `CMD`
+    
+</details>
     
 ## Conclusion
 Where digital forensic analysis tools really shine is when carving and fragmented data comes into play. Automated rebuilding of these fragmented memory segments provides us with files and artifacts otherwise unrecoverable by hand. The reason we recieve so many seemingly "useless" artifacts is because well it is hard for a tool to actually know what we as investigators need, so they provide us with all of the information and we can sift through it and find the meaningful artifacts ourselves - and this is the best possible solution. 
