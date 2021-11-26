@@ -304,9 +304,44 @@ Although a good set of artifacts are collated by forensic toolkits, there is jus
     
 <details open><summary><b>PCAP Analysis</b></summary>
   
-For PCAP analysis (we were given a packet capture alongside the disks) we will use Wireshark and Network Miner. Network miner in particular does a great job at automatically carving all downloaded files (over tcp) and providing them to us for analysis. Wireshark provides a more technical and manual interface but can allow for some complex tasks. The provided file - a pcapng file - is not naturally compatible with network miner, so we will convert the file manually before using the tool. To do so we can run the following command on a linux machine: `CMD`
+For PCAP analysis (we were given a packet capture alongside the disks) we will use Wireshark and Network Miner. Network miner in particular does a great job at automatically carving all downloaded files (over tcp) and providing them to us for analysis as well as providing lists of login attempts. Wireshark provides a more technical and manual interface but can allow for some complex tasks. The provided file - a pcapng file - is not naturally compatible with network miner, so we will convert the file manually before using the tool. To do so we can run the following command: `tcpdump -r input -w output`
+
+<p align="center">
+  <img width="500" height="90" src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/0ef94b32b0e3909856f9c3787435957f3b8e9016/imgs/2016-Black-T-Shirt-Forensics-Challenge-%236.png">
+</p>
     
+<br />
+
+    
+    
+                                                      PCAP (Network Miner)
+                       ----------------------------------------------------------------------------------
+                       |             Artifact Name             |        Summary / Artifact Type         |
+                       |          192.168.0.8 - Linux          |     FTP Logon - webmaster:password     |
+                       |            91.189.91.14/15            |         Ubuntu Distro Download         |
+                       |  192.196.0.8/4 - The "HiTeK Folder"   |     Will Have Its Own Section Below    |
+                       ----------------------------------------------------------------------------------
+ 
+</details>
+    
+<details open><summary><b>HiTeK Folder</b></summary>
+The recovered TCP files from the 192.168.0.8 IP Address display the companies (HiTeKs) website along with backend files. Within is a zip titled "Secrets.zip" and another titled "BusinessStrategy.zip". These zips are password locked so we cannot see the contents.
+In the "Secrets.zip" directory is a file named "Secrets.rtf" and in the "BusinessStrategy.zip" directory is a file named "BusinessStrategy.rtf". To extract these files we must first know the password. Rather than seeking out the password we can just bruteforce it with a wordlist. After cracking the zip password using John The Ripper we sucessfully recover the files. The password for Secrets ended up being "crazylongpassword" and "VeryLongP@ssw0rd" for BusinessStrategy.
+    
+<p align="center">
+  <br />
+  <img width="300" height="100" src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/90c546ccc2f6ef5ab93709a1401583872e75a31e/imgs/2016-Black-T-Shirt-Forensics-Challenge-%237.png">
+  <img width="380" height="100" src="https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/90c546ccc2f6ef5ab93709a1401583872e75a31e/imgs/2016-Black-T-Shirt-Forensics-Challenge-%238.png">
+  <br />
+</p>
+
+Anybody who had access to the HiTeK website was able to download these files and although password protected can crack them as we just saw. In the packet capture the IP Address 192.168.0.4 had downloaded these two files in particular from the server at 192.168.0.8.
+</details>
+    
+<details open><summary><b>Wireshark</b></summary>
+To get more information we will open up wireshark and monitor these IP AddressesThe webmaster:password FTP login which we saw earlier is performed by IP 192.168.0.6 afterwhich they had used FTP commands to cd into the www directory and store the two zip files. The user used CHMOD 644 on the files before exiting. The 192.168.0.2 IP was just a dummy machine navigating to the website and checking that the files would download successfully.
 </details>
     
 ## Conclusion
+In this scenerio the owners of each machine on the network must be identified and mapped to their IP. It is likely that a competetor organization has planted the files on the webserver but they must have already had some access or an insider as they were working on the local network. This could have been prevented if the password had been set manually and stronger passwords were used across the company.
 Where digital forensic analysis tools really shine is when carving and fragmented data comes into play. Automated rebuilding of these fragmented memory segments provides us with files and artifacts otherwise unrecoverable by hand. The reason we recieve so many seemingly "useless" artifacts is because well it is hard for a tool to actually know what we as investigators need, so they provide us with all of the information and we can sift through it and find the meaningful artifacts ourselves - and this is the best possible solution. 
