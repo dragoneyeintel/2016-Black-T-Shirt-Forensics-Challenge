@@ -344,4 +344,5 @@ To get more information we will open up wireshark and monitor these IP Addresses
     
 ## Conclusion
 In this scenerio the owners of each machine on the network must be identified and mapped to their IP. It is likely that a competetor organization has planted the files on the webserver but they must have already had some access or an insider as they were working on the local network. This could have been prevented if the password had been set manually and stronger passwords were used across the company.
+    
 Where digital forensic analysis tools really shine is when carving and fragmented data comes into play. Automated rebuilding of these fragmented memory segments provides us with files and artifacts otherwise unrecoverable by hand. The reason we recieve so many seemingly "useless" artifacts is because well it is hard for a tool to actually know what we as investigators need, so they provide us with all of the information and we can sift through it and find the meaningful artifacts ourselves - and this is the best possible solution. 
