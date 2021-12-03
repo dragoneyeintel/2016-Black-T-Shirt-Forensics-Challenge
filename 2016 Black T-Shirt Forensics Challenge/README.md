@@ -157,6 +157,10 @@ In the "Passwords and Tokens" results category, four Windows username password h
     |   Webmaster   |  NA Taken From Network FTP Logon  |     Password   |
     |    Cknight    |  NA Taken From Network FTP Logon  |      Popcorn   |
     ----------------------------------------------------------------------
+    | evilhenchman  |                                   |  MyPassw0rd!@#]|
+    |   henchman    |                                   |    Passw0rd!#  |
+    |    Laslow     |                                   |     FritoLay   |
+    ----------------------------------------------------------------------
                                                                                 
 The "Administrator" hash is actually just a placeholder hash signifying that a password has not been set yet and the account must be setup. No password will work for this account until it is set by another user with proper permissions.
 </details>
