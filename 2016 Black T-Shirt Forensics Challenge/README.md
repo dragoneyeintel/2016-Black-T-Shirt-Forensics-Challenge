@@ -297,6 +297,107 @@ Web related history can point to local device files and may be used to alert us 
 ## Autopsy
 N/A For Time Being
 
+## All Artifacts
+    
+                   --------------------------------------------------------------------------------------------
+                   |  192.168.0.6 - 192.168.30.1 - 192.168.31.1  |            Registry IPv4 Addr.             |
+                   |               DESKTOP-A8BOTBH               |           Comp. Name / Display             |
+                   |               WIN-RRKRCRMTOAQ               |        Comp. Idnetifier (win logs)         |
+                   |               DESKTOP-M7P1NB6               |        Comp. Idnetifier (win logs)         |
+                   |                192.168.0.10                 |            Incoming RDP Access             |
+                   |                 Volume Name                 |                Volume Type                 |
+                   |              System Reserved                |                 Partition                  |
+                   |            Seagate Backup Plus Drive        |           Inserted Disk Volume             |
+                   |    Seagate BUP Slim BK SCSI Disk Device     |                 USB Device                 |
+                   |                    EXTRAS                   |           Inserted Disk Volume             |           ----------------
+                   |        Generic Flash Disk USB Device        |                USB Device                  |     <     |  Machine 1   |
+                   |           Hitachi HTS541660J9SA00           |                USB Device                  |           ----------------
+                   |          TSSTcorp DVD+-RW SU-208FB          |                USB Device                  |
+                   |              Integrated Webcam              |                USB Device                  |
+                   |          CBM Flash Disk USB Device          |                USB Device                  |
+                   |                    OSDisk                   |            Inserted Disk Volume            |
+                   |Machine 1 -> Microsoft NTFS Paritioned Drives|                Windows 10                  |
+                   | Machine 2 -> EXT-Family Partitioned Drive   |              Ubuntu - Linux                |
+                   |              Many Starwars Images           |  Cached Images of Starward Memorobelia     |
+                   |            Amazon and Yahoo Images          |  Cached Images of Amazon/Yahoo Website     |
+                   |                 Capture.PNG                 |         Screenshot of OpenOffice           |
+                   |                 Image Name(s)               |                 Summary                    |
+                   |                ubuntu_logo.png              |                Ubuntu Logo                 |
+                   |          BTCTFC.gif & black-t.png           |             Challenge Images               |
+                   |            Application Icon Set             |          Ubuntu and Gnome Icons            |
+                   |      3rd Party Application Icon Sets        |    Such as Codeblocks and Thunderbird      |
+                   |                  tester                     |                   "monkey"                 |
+                   |                Administrator                |               Default/Empty                | 
+                   |                 Carlson                     |                  "123456"                  | 
+                   |                  Jonathan                   |                  "letmein"                 | 
+                   |                vmware_free                  |                Edge/IE Cache               |
+                   |                  firefox                    |                Edge/IE Cache               |
+                   |              ChromeSetup.exe                |                Firefox Cache               |
+                   |      C:\Users\Carson\Documents\locked       |          IE Cache (Weekly History)         |
+                   |    C:\Users\tester\Documents\HiTek.odp      |          IE Cache (Weekly History)         |
+                   |            G:\IP Addresses.txt              |          IE Cache (Weekly History)         |
+                   |    Users\tester\Documents\DNS Records.ods   |          IE Cache (Weekly History)         |
+                   |    tester\Documents\network-architecture    |          IE Cache (Weekly History)         |
+                   |                E:\grays_4.png               |          IE Cache (Weekly History)         |
+                   |       E:\Ubuntu 64-bit 15.10.vmwarevm       |          IE Cache (Weekly History)         |
+                   |              H:\passwords.txt               |          IE Cache (Weekly History)         |
+                   |    C:\Users\Carson\Pictures\Capture.PNG     |          IE Cache (Weekly History)         |
+                   |      C:\Users\Carson\Documents\locked       |          IE Cache (Weekly History)         |
+                   |     system32\oobe\FirstLogonAnim.html       |          IE Cache (Weekly History)         |
+                   |     Dropbox, Box, Ubuntu One, Sky Drive     |           Cloud Services Accessed          |
+                   |Flickr, Twitter, Facebook, LinkedIn, Reddit  |       Social Media Services Accessed       |
+                   |               Many HTTP Links               |                Chrome Cache                |
+                   |   Flapper, WidevineCdm, EV Certs Whitelist  |             Chrome Extentions              |
+                   |         mrobinson4614@stevenson.edu         |    FF -  VmWare Parameter (EMail)          |
+                   |                 410-940-9782                |    FF -  VmWare Parameter (Phone)          |
+                   |             T4WH-M6E3-WRBW-8T9Q             |    FF - VmWare Parameter (Prod Key)        |
+                   |                 witchcraft                  |    FF - VmWare Parameter (Username)        |
+                   |               Michael Robinaon              |    FF -   VmWare Parameter (Name)          |
+                   |            Stevenson University             |    FF - VmWare Parameter (Company Name)    |
+                   |     Metasploit Professional Client Links    |    FF -       Virtual Machines             |
+                   |    exploit/.../adobe_flash_nellymoser_bof   |    FF -       Virtual Machines             | 
+           pdf ->  |               Metasploit Docs               | Many Docs Indicating User Has Installed MSF |
+           pdf ->  |               Veracrypt Docs                |       Docs Indicating use of Veracrypt      |
+           doc ->  |                  notes.doc                  |                Word Document                |
+           doc ->  |             Next-character.docx             |                Word Document                |
+    writer doc ->  |                Projects.odt                 |               Writer Document               |
+    writer doc ->  |               Evaluations.odt               |               Writer Document               |
+    writer doc ->  |                 Notes.odt                   |               Writer Document               |
+    writer doc ->  |              Laser-Widget.odt               |               Writer Document               |
+    writer doc ->  |                 notes.odt                   |               Writer Document               |
+    writer doc ->  |                 Report.odt                  |               Writer Document               |
+    writer doc ->  |                 Warning.odt                 |               Writer Document               |
+    writer doc ->  |              B List 2015.odt                |               Writer Document               |
+    writer doc ->  |           Happy Birthday Ben.odt            |               Writer Document               |
+                   |       VMware Player, Chrome, Firefox        |            Installed Applications           |  
+                   |    VeraCrypt, WinSCP 5.7.6, Adobe Reader    |            Installed Applications           |  
+                   |        Open Office, Realtek Drivers         |            Installed Applications           |
+                   |             192.168.0.10 - RDP              |    RDP Connection Established, Logged On    |
+                   |    tester, Administrator, Carlson, Guest    |          Recovered Account Usernames        |
+                   |           DefaultAccount, Jonathan          |          Recovered Account Usernames        |
+                   |      Firefox Setup Stub 42.0.exe->(UPX)     |        Windows Defender Malicious File      | <- sigseq=0x0000055551CE2A24
+                   |            VMware Player\zip.exe            |        Windows Defender Malicious File      | <- sigseq=0x00000555B74979F0
+                   |          WinSCP\PuTTY\is-BP5UF.tmp          |        Windows Defender Malicious File      | <- sigseq=0x00000555C1725C4C
+                   |          WinSCP\PuTTY\puttygen.exe          |        Windows Defender Malicious File      | <- sigseq=0x00000555C1725C4C
+                   |     IKE and AuthIP IPsec Keying Modules     |           Modified Auth Services            |
+                   |                Carlson User                 |                Remote Logon                 |
+                   |               ANONYMOUS User                |               Network Logon                 | <- Anon had access to login to 
+                   |          Many NT AUTHORITY Logons           |               Service Logon                 |          NT AUTHORITY
+                   |                  VeraCrypt.exe              |     Antiforensic tool (Seen on Desktop)     |
+                   |                     locked                  |                Encrypted File               |
+                   |              network-architecture           |                Encrypted File               |
+                   |             ev_hashes_whitelist.bin         |                Encrypted File               |
+                   |    62A8F87D1165BC1EE9A41CEB9CE5E9D57F37E4CE |                Encrypted File               |
+                   |              videoplayback[1].mp4           |   Encrypted File (Probably Just Corrupted)  |
+                   |             Virtual Disk-s001.vmdk          |                 Virtual Disk                |
+                   |             Virtual Disk-s002.vmdk          |                 Virtual Disk                |
+                   |             Virtual Disk-s003.vmdk          |                 Virtual Disk                |
+                   |                Virtual Disk.vdmk            |                 Virtual Disk                |
+                   |                    initrd.img               |                Encrypted File               |
+                   |                     X3fw.ncf                |                Encrypted File               |
+                   |                  memtest86+.iso             |                   ISO File                  |
+                   ---------------------------------------------------------------------------------------------
+    
 <br />
     
 ## Manual
