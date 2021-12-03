@@ -154,12 +154,12 @@ In the "Passwords and Tokens" results category, four Windows username password h
     |    Carlson    | 32ED87BDB5FDC5E9CBA88547376818D4  |    "123456"    |   <   |       Windows Machine (1)      |
     |   Jonathan    | BECEDB42EC3C5C7F965255338BE4453C  |    "letmein"   |       ----------------------------------
     ----------------------------------------------------------------------
-    |   Webmaster   |  NA Taken From Network FTP Logon  |     Password   |
-    |    Cknight    |  NA Taken From Network FTP Logon  |      Popcorn   |
+    |   Webmaster   |  NA Taken From Network FTP Logon  |   "Password"   |
+    |    Cknight    |  NA Taken From Network FTP Logon  |    "Popcorn"   |
     ----------------------------------------------------------------------
-    | evilhenchman  |                                   |  MyPassw0rd!@#]|
-    |   henchman    |                                   |    Passw0rd!#  |
-    |    Laslow     |                                   |     FritoLay   |
+    | evilhenchman  |        N/A (Newtork Hash)         |"MyPassw0rd!@#]"|
+    |   henchman    |        N/A (Newtork Hash)         |  "Passw0rd!#"  |
+    |    Laslow     |        N/A (Newtork Hash)         |   "FritoLay"   |
     ----------------------------------------------------------------------
                                                                                 
 The "Administrator" hash is actually just a placeholder hash signifying that a password has not been set yet and the account must be setup. No password will work for this account until it is set by another user with proper permissions.
