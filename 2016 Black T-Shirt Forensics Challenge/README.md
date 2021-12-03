@@ -70,10 +70,11 @@ What can we surmise about the recovered machines themselves from a set of artifa
                  |                OSDisk               |     Inserted Disk Volume      |
                  -----------------------------------------------------------------------
                                                                                                 
-                               ------------------------------------------------------------------------
-                               |  Machine 1 -> Microsoft NTFS Paritioned Drives  |     Windows 10     |
-                               |    Machine 2 -> EXT-Family Partitioned Drive    |   Ubuntu - Linux   |
-                               ------------------------------------------------------------------------
+                               -------------------------------------------------------------------------------------
+                               |     Machine 1 -> Microsoft NTFS Paritioned Drives   |          Windows 10         |
+                               |       Machine 2 -> EXT-Family Partitioned Drive     |   Ubuntu - Linux web-srv-2  |
+                               | VM Within Machine 1 -> EXT-Family Partitioned Drive |             Ubuntu          |
+                               -------------------------------------------------------------------------------------
     
 </details>
 <details open><summary><b>Images</b></summary>
