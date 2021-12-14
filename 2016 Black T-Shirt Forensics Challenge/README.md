@@ -16,13 +16,9 @@ We will begin by ensuring all of the files provided match the hashes provided. A
 
 Now that the hashes have been verified and we can assume integrity, we will pull artifacts using numerous forensic analysis toolkits:
 <details open><summary><b>Tools</b></summary>
-• Autopsy: https://www.autopsy.com/
-<br />
 • Magnet AXIOM: https://www.magnetforensics.com
 <br />
-• More To Be Added
-    <br />
-+ Wireshark & Network Miner (For PCAP Analysis)
+• Wireshark & Network Miner (For PCAP Analysis)
 </details>
 
 <br />
@@ -301,9 +297,7 @@ Web related history can point to local device files and may be used to alert us 
 </details>
     
 <br />
-    
-## Autopsy
-N/A For Time Being
+
 
 ## All Artifacts
     
